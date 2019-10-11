@@ -1,0 +1,9 @@
+ #1 컨테이너
+  [div#content div.lst_thum_wrap]
+
+ #2 제목
+  [div#content div.lst_thum_wrap li a strong]
+
+ #3 저자
+  [div#content div.lst_thum_wrap li span.writer]
+

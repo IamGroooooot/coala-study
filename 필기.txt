@@ -1,0 +1,27 @@
+선택자 정리
+
+자손 = space
+ 하위의 모든 태그
+ div.items-row span
+
+자식 = >
+ 하위의 직접 속해있는 태그
+ div.items-row>span
+ 
+---
+https://news.ycombinator.com/
+---
+
+ #1 컨테이너
+  [tr.athing]
+
+ #2 순위
+  [tr.athing td.title span.rank]
+
+ #3 제목
+  [tr.athing td.title a.storylink]
+
+ #4 출처
+  [tr.athing td.title span.sitebit]
+
+
