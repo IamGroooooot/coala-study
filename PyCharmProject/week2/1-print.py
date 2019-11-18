@@ -1,7 +1,5 @@
-# 값 print하기
+# 값 print 하기
 
-print("Hello, World");
-print(100);
-print(-11);
-
-print(" == ","Hello, World!"," == ");
+print("Hello, World")
+print(100)
+print(-11)
