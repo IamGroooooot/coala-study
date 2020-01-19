@@ -24,8 +24,8 @@ search_box.send_keys(Keys.ENTER)
 for p in range(20):
     # 5초 delay
     time.sleep(2)
-    
-    js_script = "document.querySelector(\"body > app > layout > div > div.container > div.router-output > "\
+
+    js_script = "document.querySelector(\"body > app > layout > div > div.container > div.router-output > " \
                 "shrinkable-layout > search-layout > search-list > search-list-contents > perfect-scrollbar\").innerHTML"
     raw = driver.execute_script("return " + js_script)
 
@@ -45,13 +45,13 @@ for p in range(20):
         address = search_box_html.select_one(".ng-star-inserted .address").text
         print("주소: " + address)
 
-        print("--"*30)
+        print("--" * 30)
     # 다음 페이지로 이동
     try:
-        next_btn = driver.find_element_by_css_selector('button.btn_next')
+        next_btn = driver.find_element_by_css_selector("button.btn_next")
         next_btn.click()
     except:
-        print('데이터 수집 완료')
+        print("데이터 수집 완료")
         break
 
 # 크롭 웹페이지를 닫음
